@@ -1,0 +1,9 @@
+<h1>Score page</h1>
+
+<p>Your word: <%= @word %></p>
+<p>Original grid: <%= @letters.join(", ") %></p>
+<p><strong>Message:</strong> <%= @message %></p>
+<p><strong>Score:</strong> <%= @score %></p>
+<p><strong>Total Score:</strong> <%= @total_score %></p>
+
+<%= link_to "Play again", new_path, class: "btn btn-secondary mt-3" %>
